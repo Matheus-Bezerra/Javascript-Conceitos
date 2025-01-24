@@ -213,4 +213,28 @@ Para lidar com resultados das Promise, podemos usar alguns métodos:
 - .catch(): Chamado quando a promessa é rejeitada
 - .finally(): Executando quando a Promessa foi resolvida ou rejeitada
 
-<!-- <h2>async/await</h2> -->
+<h2>async/await</h2>
+
+Outra forma de fazer um trecho do seu código ser de forma assíncrona de forma mais legível e mais estruturada
+- Async é usada para declarar uma função assícrona. A sua função sempre vai retornar uma Promise <br>
+- Awaité usado dentro de funções para esperar a resolução da Promise
+
+```javascript
+// Com Promises
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+// Com async/await
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+fetchData();
+```
