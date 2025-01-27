@@ -1,6 +1,6 @@
 # Javascript (Conceitos e Fundamentos)
 
-Neste repositório deixarei algumas explicações do funcionamento do javascript e React
+Neste repositório deixarei algumas explicações do funcionamento do javascript
 <br><br>
 
 <h2>Escopo</h2>
